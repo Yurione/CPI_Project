@@ -1,0 +1,14 @@
+c:\users\filipe ferreira\documents\visual studio 2013\Projects\CPI_Beta_v1\CPI_Beta_v1\bin\Debug\CPI_Beta_v1.exe.config
+c:\users\filipe ferreira\documents\visual studio 2013\Projects\CPI_Beta_v1\CPI_Beta_v1\bin\Debug\CPI_Beta_v1.exe
+c:\users\filipe ferreira\documents\visual studio 2013\Projects\CPI_Beta_v1\CPI_Beta_v1\bin\Debug\CPI_Beta_v1.pdb
+c:\users\filipe ferreira\documents\visual studio 2013\Projects\CPI_Beta_v1\CPI_Beta_v1\obj\Debug\CPI_Beta_v1.csprojResolveAssemblyReference.cache
+c:\users\filipe ferreira\documents\visual studio 2013\Projects\CPI_Beta_v1\CPI_Beta_v1\obj\Debug\CPI_Beta_v1.Form1.resources
+c:\users\filipe ferreira\documents\visual studio 2013\Projects\CPI_Beta_v1\CPI_Beta_v1\obj\Debug\CPI_Beta_v1.Properties.Resources.resources
+c:\users\filipe ferreira\documents\visual studio 2013\Projects\CPI_Beta_v1\CPI_Beta_v1\obj\Debug\CPI_Beta_v1.csproj.GenerateResource.Cache
+c:\users\filipe ferreira\documents\visual studio 2013\Projects\CPI_Beta_v1\CPI_Beta_v1\obj\Debug\CPI_Beta_v1.exe
+c:\users\filipe ferreira\documents\visual studio 2013\Projects\CPI_Beta_v1\CPI_Beta_v1\obj\Debug\CPI_Beta_v1.pdb
+C:\Users\Filipe Ferreira\documents\visual studio 2013\Projects\CPI_Beta_v1\CPI_Beta_v1\obj\Debug\CPI_Beta_v1.csproj.ResolveComReference.cache
+C:\Users\Filipe Ferreira\Source\Repos\CPI_Project\CPI_Beta_v1\bin\Debug\CPI_Beta_v1.exe.config
+C:\Users\Filipe Ferreira\Source\Repos\CPI_Project\CPI_Beta_v1\obj\Debug\CPI_Beta_v1.csproj.ResolveComReference.cache
+C:\Users\Filipe Ferreira\Source\Repos\CPI_Project\CPI_Beta_v1\obj\Debug\CPI_Beta_v1.exe
+C:\Users\Filipe Ferreira\Source\Repos\CPI_Project\CPI_Beta_v1\obj\Debug\CPI_Beta_v1.pdb
