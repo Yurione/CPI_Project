@@ -200,7 +200,7 @@ namespace CPI_Beta_v1
                             //Write the specific day of the intervention in the correspondent week and style it
                             oSheet.Range[_cellPosition[j] + startPosition].Cells[1, 1] = interventionDate.Day;
                             oRng = oSheet.Range[_cellPosition[j] + startPosition];
-                            oRng.Cells.Style = "Good";
+                            oRng.Cells.Style = oWb.Styles.Item[33];
                             oRng.Font.Name = "Calibri";
                             oRng.Font.Size = 10;
                             oRng.HorizontalAlignment = Excel.XlVAlign.xlVAlignCenter;
