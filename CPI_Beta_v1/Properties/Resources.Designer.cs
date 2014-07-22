@@ -61,6 +61,16 @@ namespace CPI_Beta_v1.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ExcelBuilder_GenerateExcel_Error.
         /// </summary>
         internal static string ExcelBuilder_GenerateExcel_Error {
@@ -70,11 +80,49 @@ namespace CPI_Beta_v1.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Arraste o ficheiro 
+        ///         ou.
+        /// </summary>
+        internal static string Form1_Form1_Load_ {
+            get {
+                return ResourceManager.GetString("Form1_Form1_Load_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File does not exists!!.
+        /// </summary>
+        internal static string Form1_panel2_DragDrop_File_does_not_exists__ {
+            get {
+                return ResourceManager.GetString("Form1_panel2_DragDrop_File_does_not_exists__", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File format not allowed.
+        /// </summary>
+        internal static string Form1_panel2_DragDrop_File_format_not_allowed {
+            get {
+                return ResourceManager.GetString("Form1_panel2_DragDrop_File_format_not_allowed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Text Files (.txt)|*.txt.
         /// </summary>
         internal static string Form1_textBox1_MouseDoubleClick_Text_Files___txt____txt {
             get {
                 return ResourceManager.GetString("Form1_textBox1_MouseDoubleClick_Text_Files___txt____txt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageTXT {
+            get {
+                object obj = ResourceManager.GetObject("imageTXT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
