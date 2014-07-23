@@ -63,6 +63,26 @@ namespace CPI_Beta_v1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1406094705_Generate_tables {
+            get {
+                object obj = ResourceManager.GetObject("1406094705_Generate-tables", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1406094743_edit_clear {
+            get {
+                object obj = ResourceManager.GetObject("1406094743_edit-clear", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);
@@ -76,6 +96,24 @@ namespace CPI_Beta_v1.Properties {
         internal static string ExcelBuilder_GenerateExcel_Error {
             get {
                 return ResourceManager.GetString("ExcelBuilder_GenerateExcel_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AVISO.
+        /// </summary>
+        internal static string Form1_button2_Click_AVISO {
+            get {
+                return ResourceManager.GetString("Form1_button2_Click_AVISO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to O sistema não consegue interpretar o ficheiro!.
+        /// </summary>
+        internal static string Form1_button2_Click_O_sistema_não_consegue_interpretar_o_ficheiro_ {
+            get {
+                return ResourceManager.GetString("Form1_button2_Click_O_sistema_não_consegue_interpretar_o_ficheiro_", resourceCulture);
             }
         }
         

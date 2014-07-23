@@ -13,8 +13,6 @@ namespace CPI_Beta_v1
         {
             InitializeComponent();
             panel2.DragEnter += panel2_DragEnter;
-            panel2.DragOver += panel2_DragOver;
-            panel2.DragLeave += panel2_DragLeave;
             panel2.DragDrop += panel2_DragDrop;
             panel2.AllowDrop = true;
 
@@ -23,33 +21,23 @@ namespace CPI_Beta_v1
         private void button2_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == null) return;
-
-            var lines = File.ReadAllLines(textBox1.Text, Encoding.Default);
-            var txtHandler = new TxtHandler();
-            var list = txtHandler.BuildInterventions(lines);
-            var excelBuilder = new ExcelBuilder();
-            excelBuilder.GenerateExcel(list,dateTimePicker1.Value.Year);
-        }
-
-        private void textBox1_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            // Set filter options and filter index.
-            var openFileDialog1 = new OpenFileDialog
+            try
             {
-                Filter = Resources.Form1_textBox1_MouseDoubleClick_Text_Files___txt____txt,
-                FilterIndex = 1
-            };
-
-            
-
-            // Process input if the user clicked OK.
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                textBox1.Text = openFileDialog1.FileName;
-
+                var lines = File.ReadAllLines(textBox1.Text, Encoding.Default);
+                var txtHandler = new TxtHandler();
+                var list = txtHandler.BuildInterventions(lines);
+                var excelBuilder = new ExcelBuilder();
+                excelBuilder.GenerateExcel(list, dateTimePicker1.Value.Year);
             }
-
+            catch (ArgumentException)
+            {
+                MessageBox.Show(Resources.Form1_button2_Click_O_sistema_não_consegue_interpretar_o_ficheiro_,
+                    Resources.Form1_button2_Click_AVISO, MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+           
         }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -85,17 +73,6 @@ namespace CPI_Beta_v1
             }
         }
 
-      private void panel2_DragLeave(object sender, EventArgs e)
-        {
-         
-        }
-
-      private void panel2_DragOver(object sender, DragEventArgs e)
-        {
-           
-          
-        }
-
       private void panel2_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
@@ -116,11 +93,17 @@ namespace CPI_Beta_v1
 
 
             // Process input if the user clicked OK.
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                textBox1.Text = openFileDialog1.FileName;
+            if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
+            textBox1.Text = openFileDialog1.FileName;
+            panel1.BringToFront();
+            pictureBox2.Image = Resources.imageTXT;
+            label4.Text = openFileDialog1.FileName.Split('\\').Last();
+        }
 
-            }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel2.BringToFront();
+            textBox1.Text = string.Empty;
         }
 
     
