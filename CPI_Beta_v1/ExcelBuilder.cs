@@ -25,8 +25,12 @@ namespace CPI_Beta_v1
         {
             try
             {
+                // Set cursor as hourglass
+                Cursor.Current = Cursors.WaitCursor;
+
+
                 //Start Excel and get Application object.
-                var oXl = new Excel.Application { Visible = true };
+                var oXl = new Excel.Application { Visible = false };
 
                 //Get a new workbook.
                 Excel._Workbook oWb = oXl.Workbooks.Add(Missing.Value);
@@ -216,6 +220,10 @@ namespace CPI_Beta_v1
 
                 FormatPeriodicity(interventionsList, oSheet, periodicity);
 
+                // Set cursor as default arrow
+                Cursor.Current = Cursors.Default;
+
+                oXl.Visible = true;
             }
             catch (Exception theException)
             {
